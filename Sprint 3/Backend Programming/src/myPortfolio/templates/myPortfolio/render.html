@@ -1,0 +1,66 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> portfolio </title>
+	<link rel="stylesheet" href="{% static 'myPortfolio/styles.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body id="portfolioPage">
+	<div class="background"></div>
+	<section class="similar" id="renderField">
+		<div class="renderphoto">
+			<img class="photo" src ="{% static 'myPortfolio/images/portfolioAcessImage.png' %}"></div>
+		</div>
+		<div class="renderDesc">
+			<h2> Description</h2>
+			<p> 
+				Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Nam eget tellus placerat,
+molestie ante quis, convallis velit. Morbi
+tincidunt ante ut mi egestas, id porta arcu
+vestibulum. Praesent eget enim aliquam,
+ornare nulla a, sollicitudin odio. Pellentesque
+pellentesque sed justo ut venenatis.
+Vestibulum sed ex quis ante pretium sagittis.
+Etiam diam nibh, fringilla et ligula in, rhoncus
+molestie enim. Vivamus pretium dolor sit
+amet mauris tempus posuere. Maecenas
+sed scelerisque velit. Cras maximus
+maximus enim blandit suscipit. Aliquam
+sagittis, ipsum quis eleifend mattis, ante
+mauris ultrices lectus, non tempus mauris
+ipsum in eros. Vestibulum a accumsan risus,
+vel vehicula lorem.
+			</p>
+			<div class="comments">
+				<h3> COMMENTS: </h3>
+				<div id="newComment">
+					<h3> Thoughts?</h3>
+					<form action='.' method='post'>
+						{% csrf_token %}
+						{{forms.as_p}}
+						<input type="submit">
+						<input type="reset">
+					</form>
+				</div>
+				{% for comment in comments%}
+				<div class="commentBox">
+					<h5 class="name"> {{comment.name}} </h5>
+					<p class="content"> {{comment.comment}} </p>
+				</div>
+
+				{%endfor%}
+				
+				
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>

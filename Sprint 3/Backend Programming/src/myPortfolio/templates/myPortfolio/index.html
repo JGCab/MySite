@@ -1,0 +1,65 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" href="{% static 'myPortfolio\styles.css'%}">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body id="titlePage">
+		<div class="background"></div>
+		<div id ="aboutMeBox" class="hidden">
+			<h2> ABOUT ME</h2>
+			<p class="leftAlign">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tellus placerat,
+molestie ante quis, convallis velit. Morbi tincidunt ante ut mi egestas, id porta arcu
+vestibulum. Praesent eget enim aliquam, ornare nulla a, sollicitudin odio.
+Pellentesque pellentesque sed justo ut venenatis. Vestibulum sed ex quis ante
+pretium sagittis. Etiam diam nibh, fringilla et ligula in, rhoncus molestie enim.
+Vivamus pretium dolor sit amet mauris tempus posuere. Maecenas sed
+scelerisque velit. Cras maximus maximus enim blandit suscipit. Aliquam sagittis,
+ipsum quis eleifend mattis, ante mauris ultrices lectus, non tempus mauris ipsum
+in eros. Vestibulum a accumsan risus, vel vehicula lorem.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut magna massa.
+Quisque sit amet orci neque. Vestibulum in dapibus risus. Nunc pharetra non
+ligula nec mattis. Suspendisse auctor nunc diam, ut tristique mauris posuere a.
+Nunc nunc leo, condimentum ac auctor ut, laoreet nec ante. Quisque viverra
+varius scelerisque. Quisque leo augue, consectetur non tincidunt ut, mollis ac ex.
+Vestibulum imperdiet convallis elit, et accumsan purus consequat eu. Vivamus
+consectetur iaculis nibh vitae efficitur. Nullam viverra tortor non malesuada
+sollicitudin. Aenean sed lorem ultrices, ornare nibh egestas, iaculis justo.
+			</p>
+		</br>
+		<h3> CONTACT INFORMATION </h3>
+		<p>
+			Email: 123abc@gmail.com<br>
+			Contact number: 09123456789<br>
+			Facebook: me<br>
+			Instagram: me<br>
+			Twitter: me but with existential crisis<br>
+		</p>
+		<div id="aboutMeExit"> < </div>
+			</div>
+		</div>
+		<div class="home upper">
+			<div class="title">
+				JG CABATU-AN
+			</div>
+		</div>
+		<div class="home lower">
+			<div class="picBtn" id="titlePageLeft">
+				<div class="label" id="portfolio">PORTFOLIO</div>
+			</div>
+			<div class="picBtn" id="titlePageRight">
+				<div class="label" id="aboutMe">ABOUT ME</div>
+			</div>
+			
+		</div>
+		<script src="{% static 'myPortfolio/app.js' %}"></script>
+	</body>
+</html>
+	
